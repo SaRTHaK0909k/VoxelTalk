@@ -74,7 +74,7 @@ const features = [
 export function Bento() {
   const { isSignedIn } = useUser();
   return (
-    <BentoGrid className="grid grid-cols-3 grid-rows-7 lg:grid-rows-[repeat(7,_minmax(0,_110px))] grid-rows-[repeat(7,_minmax(0,_300px))] gap-3 mt-24 px-64 mb-32">
+    <BentoGrid className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 auto-rows-[280px] sm:auto-rows-[300px] lg:grid-rows-[repeat(7,_minmax(0,_110px))] gap-3 sm:gap-4 mt-12 sm:mt-16 lg:mt-24 px-4 sm:px-8 md:px-16 lg:px-32 xl:px-64 mb-16 sm:mb-24 lg:mb-32">
       {features.map((feature) => {
         const href = isSignedIn ? feature.href : "/sign-in";
         return <BentoCard key={feature.name} {...feature} href={href} />;

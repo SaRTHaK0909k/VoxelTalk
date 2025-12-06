@@ -42,29 +42,29 @@ export default function Landing() {
 
       <Navbar />
       
-      <div className="md:mt-64 sm:mt-60 mt-60 flex-grow flex items-center justify-center">
-        <div className="relative z-10 text-center max-w-2xl pointer-events-none ">
-          <Badge className="pointer-events-auto bg-gradient-to-br via-70% from-primary via-muted-foreground to-primary rounded-full py-1 border-none">
+      <div className="mt-24 sm:mt-32 md:mt-48 lg:mt-64 flex-grow flex items-center justify-center px-4 sm:px-6">
+        <div className="relative z-10 text-center max-w-2xl pointer-events-none">
+          <Badge className="pointer-events-auto bg-gradient-to-br via-70% from-primary via-muted-foreground to-primary rounded-full py-1 px-3 border-none text-xs sm:text-sm">
             Just Dropped v1.0 — Equation Magic!
           </Badge>
-          <h1 className="pointer-events-none text-white mt-6 text-5xl sm:text-5xl md:text-6xl font-bold !leading-[1.2] tracking-tight">
+          <h1 className="pointer-events-none text-white mt-6 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold !leading-[1.2] tracking-tight">
             Math Meets Magic ✨
           </h1>
-          <p className="pointer-events-none mt-4 text-white md:mt-6 text-[17px] font-medium md:text-lg">
+          <p className="pointer-events-none mt-4 text-white md:mt-6 text-sm sm:text-base md:text-lg font-medium px-2">
             VoxelTalk turns your hand-drawn equations and physics problems into instant AI-powered solutions. 
             No typing. No limits. Just draw it, click solve, and let the math magic happen.
           </p>
-          <div className="md:mt-8 mt-6 flex items-center justify-center gap-4">
-            <Button size="lg" className="pointer-events-auto rounded-full text-base" onClick={() => navigate(isSignedIn ? "/canvas" : "/sign-up")}
+          <div className="md:mt-8 mt-6 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">ustify-center gap-3 sm:gap-4">
+            <Button size="lg" className="pointer-events-auto rounded-full text-sm sm:text-base w-full sm:w-auto" onClick={() => navigate(isSignedIn ? "/canvas" : "/sign-up")}
               disabled={!isLoaded}>
-              Get Started <ArrowUpRight className="!h-5 !w-5" />
+              Get Started <ArrowUpRight className="!h-4 !w-4 sm:!h-5 sm:!w-5" />
             </Button>
             <Button
               variant="outline"
               size="lg"
-              className="pointer-events-auto rounded-full text-base shadow-none"
+              className="pointer-events-auto rounded-full text-sm sm:text-base shadow-none w-full sm:w-auto"
             >
-              <CirclePlay className="!h-5 !w-5" /> Watch Demo
+              <CirclePlay className="!h-4 !w-4 sm:!h-5 sm:!w-5" /> Watch Demo
             </Button>
           </div>
         </div>
@@ -78,8 +78,8 @@ export default function Landing() {
 
   <Footer />
 
-      <div className="h-[40rem] z-10 bg-black flex items-center text-muted/50 justify-center text-3xl">
-        <TextHoverEffect text="VOXELTALK" />
+      <div className=\"h-[20rem] sm:h-[30rem] md:h-[40rem] z-10 bg-black flex items-center text-muted/50 justify-center text-xl sm:text-2xl md:text-3xl px-4\">
+        <TextHoverEffect text=\"VOXELTALK\" />
       </div>
 
     </>

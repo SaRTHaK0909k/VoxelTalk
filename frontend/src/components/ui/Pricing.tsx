@@ -70,8 +70,8 @@ const Pricing = () => {
 
   return (
     <TooltipProvider>
-      <div className="z-10 min-h-screen flex flex-col items-center justify-center py-12 px-6">
-        <h1 className="text-5xl text-white font-bold text-center tracking-tight">
+      <div className="z-10 min-h-screen flex flex-col items-center justify-center py-8 sm:py-12 px-4 sm:px-6">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl text-white font-bold text-center tracking-tight">
           Pricing
         </h1>
         <Tabs

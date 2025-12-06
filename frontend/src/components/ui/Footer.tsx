@@ -38,7 +38,7 @@ const Footer = () => {
     <div className="bg-black w-full px-0 z-10 flex flex-col">
       <footer>
         <div className="max-w-screen-xl mx-auto">
-          <div className="py-12 flex flex-col sm:flex-row items-start justify-between gap-x-10 gap-y-10 px-6 xl:px-0">
+          <div className="py-8 sm:py-12 flex flex-col sm:flex-row items-start justify-between gap-x-6 sm:gap-x-10 gap-y-8 sm:gap-y-10 px-4 sm:px-6 xl:px-0">
             <div>
               <Logo />
               <p className="text-muted/80">We do the math so you don't have to.</p>
@@ -57,24 +57,13 @@ const Footer = () => {
             </div>
 
             {/* Subscribe Newsletter */}
-            <div className="max-w-xs w-full">
-              <h6 className="font-semibold text-muted/80">Stay up to date</h6>
-              <form className="mt-6 flex items-center gap-2">
-                <Input className="text-muted/80" type="email" placeholder="Enter your email" />
-                <Button variant="outline">Subscribe</Button>
-              </form>
+            <div className=\"max-w-xs w-full\">\n              <h6 className=\"font-semibold text-muted/80\">Stay up to date</h6>\n              <form className=\"mt-4 sm:mt-6 flex flex-col sm:flex-row items-stretch sm:items-center gap-2\">\n                <Input className=\"text-muted/80 w-full\" type=\"email\" placeholder=\"Enter your email\" />\n                <Button variant=\"outline\" className=\"w-full sm:w-auto\">Subscribe</Button>\n              </form>
             </div>
           </div>
-          <Separator className="bg-muted/80" />
-          <div className="py-8 flex flex-col-reverse sm:flex-row items-center justify-between gap-x-2 gap-y-5 px-6 xl:px-0">
+          <Separator className=\"bg-muted/80\" />
+          <div className=\"py-6 sm:py-8 flex flex-col-reverse sm:flex-row items-center justify-between gap-x-2 gap-y-4 sm:gap-y-5 px-4 sm:px-6 xl:px-0\">
             {/* Copyright */}
-            <span className="text-muted/80">
-              &copy; {new Date().getFullYear()}{" "}
-              <Link to="/" target="_blank">
-                Shadcn UI Blocks
-              </Link>
-              . All rights reserved.
-            </span>
+            <span className=\"text-muted/80 text-sm sm:text-base text-center sm:text-left\">\n              &copy; {new Date().getFullYear()}{\" \"}\n              <Link to=\"/\" target=\"_blank\">\n                VoxelTalk\n              </Link>\n              . All rights reserved.\n            </span>
 
             <div className="flex items-center gap-5 text-muted/80">
               <Link to="#" target="_blank">
