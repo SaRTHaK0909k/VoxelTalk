@@ -78,8 +78,8 @@ export default function Landing() {
 
   <Footer />
 
-      <div className=\"h-[20rem] sm:h-[30rem] md:h-[40rem] z-10 bg-black flex items-center text-muted/50 justify-center text-xl sm:text-2xl md:text-3xl px-4\">
-        <TextHoverEffect text=\"VOXELTALK\" />
+      <div className="h-[20rem] sm:h-[30rem] md:h-[40rem] z-10 bg-black flex items-center text-muted/50 justify-center text-xl sm:text-2xl md:text-3xl px-4">
+        <TextHoverEffect text="VOXELTALK" />
       </div>
 
     </>

@@ -57,13 +57,24 @@ const Footer = () => {
             </div>
 
             {/* Subscribe Newsletter */}
-            <div className=\"max-w-xs w-full\">\n              <h6 className=\"font-semibold text-muted/80\">Stay up to date</h6>\n              <form className=\"mt-4 sm:mt-6 flex flex-col sm:flex-row items-stretch sm:items-center gap-2\">\n                <Input className=\"text-muted/80 w-full\" type=\"email\" placeholder=\"Enter your email\" />\n                <Button variant=\"outline\" className=\"w-full sm:w-auto\">Subscribe</Button>\n              </form>
+            <div className="max-w-xs w-full">
+              <h6 className="font-semibold text-muted/80">Stay up to date</h6>
+              <form className="mt-4 sm:mt-6 flex flex-col sm:flex-row items-stretch sm:items-center gap-2">
+                <Input className="text-muted/80 w-full" type="email" placeholder="Enter your email" />
+                <Button variant="outline" className="w-full sm:w-auto">Subscribe</Button>
+              </form>
             </div>
           </div>
-          <Separator className=\"bg-muted/80\" />
-          <div className=\"py-6 sm:py-8 flex flex-col-reverse sm:flex-row items-center justify-between gap-x-2 gap-y-4 sm:gap-y-5 px-4 sm:px-6 xl:px-0\">
+          <Separator className="bg-muted/80" />
+          <div className="py-6 sm:py-8 flex flex-col-reverse sm:flex-row items-center justify-between gap-x-2 gap-y-4 sm:gap-y-5 px-4 sm:px-6 xl:px-0">
             {/* Copyright */}
-            <span className=\"text-muted/80 text-sm sm:text-base text-center sm:text-left\">\n              &copy; {new Date().getFullYear()}{\" \"}\n              <Link to=\"/\" target=\"_blank\">\n                VoxelTalk\n              </Link>\n              . All rights reserved.\n            </span>
+            <span className="text-muted/80 text-sm sm:text-base text-center sm:text-left">
+              &copy; {new Date().getFullYear()}{" "}
+              <Link to="/" target="_blank">
+                VoxelTalk
+              </Link>
+              . All rights reserved.
+            </span>
 
             <div className="flex items-center gap-5 text-muted/80">
               <Link to="#" target="_blank">
