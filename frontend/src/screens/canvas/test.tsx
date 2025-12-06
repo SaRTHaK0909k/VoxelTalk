@@ -756,12 +756,8 @@ function Test() {
     <TooltipProvider>
     <div>
       <DotBackground/>
-      <a href="/">
-        <img
-          src="/newlogo.png"
-          alt="VoxelTalk Logo"
-          className="fixed top-4 left-4 h-12 z-50"
-        />
+      <a href="/" className="fixed top-3 left-3 sm:top-4 sm:left-4 z-50 font-semibold text-lg sm:text-xl tracking-tight bg-gradient-to-r from-sky-400 via-indigo-400 to-pink-400 bg-clip-text text-transparent">
+        VoxelTalk
       </a>
       <div className="fixed z-10 bottom-6 left-1/2 -translate-x-1/2 z-50">
         <Toolbar

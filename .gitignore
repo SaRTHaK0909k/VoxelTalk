@@ -83,7 +83,8 @@ jspm_packages/
 
 # Gatsby files
 .cache/
-public/
+# Allow frontend public assets; still ignore backend/public if present
+backend/public/
 
 # Storybook build outputs
 .out/
