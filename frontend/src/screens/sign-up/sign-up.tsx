@@ -17,12 +17,10 @@ export default function SignUpPage() {
       {/* Sign-in box */}
       <div className="relative z-10 flex flex-col items-center gap-6">
         <div className="relative right-[-5%]">
-            <a href="/">
-                <img
-                src="/logoonly.png"
-                alt="VoxelTalk Logo"
-                className="h-12"
-                />
+            <a href="/" className="flex items-center font-semibold text-xl tracking-tight">
+              <span className="bg-gradient-to-r from-sky-400 via-indigo-400 to-pink-400 bg-clip-text text-transparent">
+                VoxelTalk
+              </span>
             </a>
         </div>
 

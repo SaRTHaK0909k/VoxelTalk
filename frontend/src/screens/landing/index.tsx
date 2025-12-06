@@ -54,7 +54,7 @@ export default function Landing() {
             VoxelTalk turns your hand-drawn equations and physics problems into instant AI-powered solutions. 
             No typing. No limits. Just draw it, click solve, and let the math magic happen.
           </p>
-          <div className="md:mt-8 mt-6 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">ustify-center gap-3 sm:gap-4">
+          <div className="md:mt-8 mt-6 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">
             <Button size="lg" className="pointer-events-auto rounded-full text-sm sm:text-base w-full sm:w-auto" onClick={() => navigate(isSignedIn ? "/canvas" : "/sign-up")}
               disabled={!isLoaded}>
               Get Started <ArrowUpRight className="!h-4 !w-4 sm:!h-5 sm:!w-5" />
